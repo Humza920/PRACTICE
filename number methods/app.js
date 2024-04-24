@@ -1,5 +1,5 @@
 // round
-let num = 2.5789
+// let num = 2.5789
 // console.log(Math.round(num));
 // Math.round mai jis tha math mai round hota hai use trha round hoga lekin agr pooint kai baad 5 hai tou round hokar woh ik bara show hoga jaise 2 .5 hai tou 3 ho jaiga 
 
@@ -13,4 +13,6 @@ let num = 2.5789
 
 // round
 // console.log(Math.random())
-// iss se koi bhi number randomly generate hoga\
+// iss se koi bhi number randomly generate hoga
+
+console.log(Math.ceil(Math.random()*2));
