@@ -15,4 +15,38 @@
 // console.log(Math.random())
 // iss se koi bhi number randomly generate hoga
 
-console.log(Math.ceil(Math.random()*2));
+// console.log(Math.ceil(Math.random()*2));
+
+
+
+
+// TOSS LOGIC AGAIN
+const para = document.querySelector("p")
+const img  = document.querySelector("img")
+
+function toss (Btn) {
+    console.log('toss' , Btn);
+    const logic = Math.ceil(Math.random()*2)
+    console.log(logic);
+
+    if ( Btn === 'heads'  && logic === 1  ||   Btn === 'tails' && logic === 2) {
+para.innerHTML ="You Won a toss"
+    } else {
+        para.innerHTML ="You Lost"
+    }
+
+    if (logic === 1 ) {
+        img.src="https://en.numista.com/catalogue/photos/pakistan/725-original.jpg"
+    } else {
+        img.src="https://thumbs.dreamstime.com/b/pakistani-rupees-coin-white-background-87280619.jpg"
+    }
+}
+
+
+
+
+
+
+
+
+
