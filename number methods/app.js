@@ -43,7 +43,7 @@ para.innerHTML ="You Won a toss"
 }
 
 
-
+console.log(para.innerHTML);
 
 
 
