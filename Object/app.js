@@ -1,4 +1,6 @@
-const div = document.querySelector("div")
+const div = document.querySelector(".content")
+const para = document.querySelector("p")
+
 const users = [
     {
         name: "Alice",
@@ -56,8 +58,10 @@ for (let i = 0; i < users.length; i++) {
 console.log(users[i]);
 div.innerHTML+=`<h2>Name:${users[i].name}</h2>
 <h2>Age:${users[i].age}</h2><hr>`
-for (let j = 0; j < users.hobbies.length; j++) {
 
-    
-}
-}
+    }
+
+    for (let j = 0; j < users.hobbies.length; j++) {
+        console.log(users[i].hobbies[j]);
+            
+        }
