@@ -57,11 +57,9 @@ const users = [
 for (let i = 0; i < users.length; i++) {
 console.log(users[i]);
 div.innerHTML+=`<h2>Name:${users[i].name}</h2>
-<h2>Age:${users[i].age}</h2><hr>`
-
+<h2>Age:${users[i].age}</h2>`
+for (let j = 0; j < users[i].hobbies.length; j++) {
+    console.log(users[i].hobbies[j]);
+    div.innerHTML+=`<h3>Hobbies:${users[i].hobbies[j]}</h3>`
     }
-
-    for (let j = 0; j < users.hobbies.length; j++) {
-        console.log(users[i].hobbies[j]);
-            
-        }
+    }
