@@ -32,21 +32,42 @@
 // })
 
 
-const bankBalance = 200000
-const shadi = new Promise((resolve, reject) => {
-    if (bankBalance>500000) {
-        console.log("shadi manzoor hai");
-        resolve()
-    } else {
-        console.log("aba nhi man rhai");
-        reject()
-    }
-})
+// const bankBalance = 200000
+// const shadi = new Promise((resolve, reject) => {
+//     if (bankBalance>500000) {
+//         // console.log("shadi manzoor hai");
+//         resolve("shadi manzoor hai")
+//     } else {
+//         // console.log("aba nhi man rhai");
+//         reject("aba nhi man rhai")
+//     }
+// })
 
-shadi
-.then(()=>{
-    console.log("shadi done")
+// shadi
+// .then((res)=>{
+//     console.log(res)
+// })
+// .catch((err)=>{
+//     console.log(err)
+// })
+
+
+function shadi (bankBalance) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (bankBalance>200000) {
+                console.log("SHADI MUBARAK");
+            } else {
+                console.log("AMA NAI ZEHAR KHA LIA");
+            }        
+        }, 1000);
+    })
+}
+
+shadi(100000)
+.then((res)=>{
+    console.log(res);
 })
-.catch(()=>{
-    console.log("shadi not done")
+.catch((err)=>{
+    console.log(err);
 })
