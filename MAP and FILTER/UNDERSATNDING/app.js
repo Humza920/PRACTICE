@@ -24,20 +24,20 @@ standard: "12th"
 //     console.log(iterator);
 // }
 
-// forEach
-// const each = arr.forEach(item => {
-//     console.log(item);
-    // return item
-// });
-// console.log(each);
-
-map
-const mAp = arr.map(item => {
+forEach
+const each = arr.forEach(item => {
     console.log(item);
     return item
 });
-console.log(mAp);
+console.log(each);
 
-NOTE: forEach or map me sirf ik frq hai map ka method return karaiga jabkai forEach kka nhi
+// map
+// const mAp = arr.map(item => {
+//     console.log(item);
+//     return item
+// });
+// console.log(mAp);
+
+// NOTE: forEach or map me sirf ik frq hai map ka method return karaiga jabkai forEach kka nhi
 
 
