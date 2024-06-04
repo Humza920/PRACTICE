@@ -12,17 +12,17 @@ fathername: "Jalil",
 standard: "12th"
 }
 
-for in ----> objects par use hoga ye
-for (const key in user) {
-    console.log(key);
-    console.log(user[key]);
-    console.log(`${key} ===> ${user[key]}`);
-}
+// for in ----> objects par use hoga ye
+// for (const key in user) {
+//     console.log(key);
+//     console.log(user[key]);
+//     console.log(`${key} ===> ${user[key]}`);
+// }
 
-for of ----> array kai liye use hoga
-for (const iterator of arr) {
-    console.log(iterator);
-}
+// for of ----> array kai liye use hoga
+// for (const iterator of arr) {
+//     console.log(iterator);
+// }
 
 // forEach
 // const each = arr.forEach(item => {
