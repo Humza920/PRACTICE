@@ -3,22 +3,32 @@ const email = document.querySelector("#email")
 const pass = document.querySelector("#password")
 const userName = document.querySelector("#full-name")
 
-
 const arr = []
 
+function local() {
+   
+   localStorage.setItem("email", arr.email);
+   localStorage.setItem("password", arr.pass );
+   localStorage.setItem("userName", arr.userName);
+}
+
+
 form.addEventListener("submit", (event) => {
-        event.preventDefault()
+   event.preventDefault()     
+   arr.userName = userName.value
+   arr.email = email.value
+   arr.pass = pass.value
+   
+   local()
+
+   userName.value = ""
+   email.value = ""
+   pass.value = ""
+
+   console.log(arr);
+
+   form.reset()
+   window.location = "index.html"
         
-     const data = arr.userName = userName.value
-     const data2 =  arr.email = email.value
-     const data3 =  arr.pass = pass.value
-       
-        userName.value = ""
-        email.value = ""
-        pass.value = ""
-
-        console.log(arr);
-
     })
-window.localStorage.setItem()
 
