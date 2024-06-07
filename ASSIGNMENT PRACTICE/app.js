@@ -1,6 +1,7 @@
-const getData = localStorage.getItem(arr)
-
+const getData = localStorage.getItem("send")
 const formLogin = document.querySelector("form")
+
+console.log(getData);
 
 formLogin.addEventListener('submit' , (event) =>{
     event.preventDefault()
