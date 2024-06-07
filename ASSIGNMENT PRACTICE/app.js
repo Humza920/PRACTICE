@@ -3,7 +3,9 @@ const formLogin = document.querySelector("form")
 
 console.log(getData);
 
-let data = JSON.parse(getData)
+let data;
+
+data = JSON.parse(getData)
 console.log(data);
 
 // let rom = data.map( item =>{
@@ -24,7 +26,7 @@ let pass = document.querySelector("#password")
 
 
 
-    if (data.includes(email.value) && data.includes(pass.value)) {
+    if (getData.includes(email.value) && getData.includes(pass.value)) {
 
         alert("SUCCESFULLY LOGIN");
         formLogin.reset()
