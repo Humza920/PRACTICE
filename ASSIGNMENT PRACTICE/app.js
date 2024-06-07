@@ -1,18 +1,18 @@
-const getPass = localStorage.getItem("password")
-const getEmail = localStorage.getItem("email")
+const getData = localStorage.getItem(arr)
+
 const formLogin = document.querySelector("form")
 
 formLogin.addEventListener('submit' , (event) =>{
     event.preventDefault()
     
-if (getEmail === null || getPass === null) {
+if (getData === null || getData === null) {
         console.log("Create an account before LogIn");
 }
 
 const email = document.querySelector("#email").value
 const pass = document.querySelector("#password").value
 
-if (getEmail === email || getPass === pass) {
+if (getData === email || getData === pass) {
 
     alert("SUCCESFULLY LOGIN");
     formLogin.reset()
