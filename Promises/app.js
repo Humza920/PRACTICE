@@ -84,17 +84,17 @@ const div = document.querySelector("div");
 //     console.log(err);
 //   });
 
-async function dataCall () {
-  try {const res  = await axios("https://api.escuelajs.co/api/v1/users")
-    console.log(res.data);
-    res.data.map((item)=>{
-      div.innerHTML+=`<h1>${item.name}</h1>`
-    })
-  }
+// async function dataCall () {
+//   try {const res  = await axios("https://api.escuelajs.co/api/v1/users")
+//     console.log(res.data);
+//     res.data.map((item)=>{
+//       div.innerHTML+=`<h1>${item.name}</h1>`
+//     })
+//   }
 
-  catch(err){
-    console.log(err);
-  }
-}
+//   catch(err){
+//     console.log(err);
+//   }
+// }
 
-dataCall()
+// dataCall()
