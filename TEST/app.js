@@ -5,7 +5,7 @@ const form = document.querySelector("form")
 const input = document.querySelector("input")
 const button = document.querySelector("button")
 const div = document.querySelector("div")
-
+const Btn = document.querySelector("Btn")
 let arr = []
 
 form.addEventListener("submit" ,(e)=>{
@@ -23,11 +23,17 @@ form.addEventListener("submit" ,(e)=>{
     arr.push(obj)
     console.log(arr);
 
-    div.innerHTML += `
+    div.innerHTML += `</br>
     <li>${obj.Name}</li>
     <li>${obj.Age}</li>
     <li>${obj.Email}</li>
-    `
-
+    <button id ="Btn" onclick="clear()">Clear</button>
+    `    
     
+const clear = document.querySelector("#Btn")
+
+clear.addEventListener("click",()=>{
+    div.innerHTML =""
+    });
 })
+
