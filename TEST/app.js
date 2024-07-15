@@ -23,9 +23,11 @@ form.addEventListener("submit" ,(e)=>{
     arr.push(obj)
     console.log(arr);
 
-    div.innerText += `
-<p>${obj.Name}</p>
-<p>${obj.Age}</p>
-<p>${obj.Email}</p>
- `;
+    div.innerHTML += `
+    <li>${obj.Name}</li>
+    <li>${obj.Age}</li>
+    <li>${obj.Email}</li>
+    `
+
+    
 })
